@@ -13,65 +13,58 @@
 </head>
 <body class="bg-gradient-to-b from-[var(--Soft-violet)] to-[var(--Soft-blue)]">
   <div class="flex flex-col min-h-screen items-center justify-center">
-    <main class="flex flex-col absolute top-40 lg:flex-row max-w-xs lg:max-w-2xl bg-white px-5 lg:pl-0 lg:pr-5 pb-10 lg:pb-0 rounded-3xl text-center lg:text-left lg:my-0 shadow-2xl">
-      <div class="px-5 relative lg:static lg:p-0 lg:flex lg:items-center lg:justify-center">        
+    <main class="flex flex-col absolute top-40 lg:flex-row max-w-xs lg:max-w-3xl bg-white px-5 lg:pl-0 lg:pr-5 pb-10 lg:pb-0 rounded-3xl text-center lg:text-left lg:my-0 shadow-2xl">
+      <div class="px-5 relative lg:p-0 lg:flex lg:items-center lg:justify-center">        
         <!-- Mobile -->
         <img class="block lg:hidden mb-5" src="./images/bg-pattern-mobile.svg" alt="">        
         <img class="block lg:hidden absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 -mt-4 h-44  w-auto max-w-none" src="./images/illustration-woman-online-mobile.svg" alt="">      
         
         <!-- Desktop -->
-        <!-- <img class="hidden lg:block -ml-40 w-[400px] h-[400px]" src="./images/bg-pattern-desktop.svg" alt="">         -->
-        <!-- <img class="hidden lg:block w-full h-80 -ml-5" src="./images/illustration-woman-online-desktop.svg" alt="">       -->
-
+        <img class="hidden lg:block absolute h-80 top-9 -left-[3.1rem]" src="./images/illustration-woman-online-desktop.svg" alt="">      
+        <img class="hidden lg:block absolute -left-28 top-40" src="./images/illustration-box-desktop.svg" alt="">        
         <div class="hidden lg:block w-96 h-full bg-[url('./images/bg-pattern-desktop.svg')] bg-no-repeat bg-[right_3rem_top_-13rem] bg-[length:700px_700px]"></div>        
         
-      </div>
-  
-      <!-- <div class="px-5 relative lg:p-0 lg:flex lg:items-center lg:justify-center">        
-        <img class="block mb-5 lg:hidden" src="./images/bg-pattern-mobile.svg" alt="">        
-        <div class="bg-[url('./images/bg-pattern-desktop.svg')] bg-no-repeat w-96 h-96"></div>        
-        <img class="absolute left-1/2 top-0 lg:top-1/2 transform -translate-x-1/2 -translate-y-1/2 -mt-4 lg:-mt-0 lg:-ml-4 h-44 lg:h-72 w-auto max-w-none" src="./images/illustration-woman-online-mobile.svg" alt="">      
-      </div>             -->
+      </div>  
 
-      <div class="lg:py-10 lg:w-full lg:h-full">
+      <div class="lg:py-10 lg:w-[350px] lg:h-full">
         <h1 class="font-bold text-[var(--Very-dark-desaturated-blue)] text-3xl mb-5">FAQ</h1>
         <div class="w-full text-left">
           
           <div class="flex flex-col py-4 border-b-[1px] border-solid border-[var(--Light-grayish-blue)]">
-            <div class="flex flex-row items-center justify-between" id="question1" onclick="showAnswer(1, event)">
-              <span class="text-sm text-[var(--Very-dark-grayish-blue)]">How many team members can I invite?</span>
+            <div class="flex flex-row items-center justify-between cursor-pointer" id="question1" onclick="showAnswer(1, event)">
+              <span class="text-sm text-[var(--Very-dark-grayish-blue)] lg:hover:text-[var(--Soft-red)]">How many team members can I invite?</span>
               <img class="w-[0.6rem] h-2 transition-transform" src="./images/icon-arrow-down.svg" alt="">
             </div>
             <p class="text-xs pt-2 pr-4 text-[var(--Dark-grayish-blue)] transition-opacity duration-300" style="display: none;" id="answer1">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
           </div>
         
           <div class="flex flex-col py-4 border-b-[1px] border-solid border-[var(--Light-grayish-blue)]">
-            <div class="flex flex-row items-center justify-between" id="question2" onclick="showAnswer(2, event)">
-              <span class="text-sm text-[var(--Very-dark-grayish-blue)]">What is the maximum file upload size?</span>
+            <div class="flex flex-row items-center justify-between cursor-pointer" id="question2" onclick="showAnswer(2, event)">
+              <span class="text-sm text-[var(--Very-dark-grayish-blue)] lg:hover:text-[var(--Soft-red)]">What is the maximum file upload size?</span>
               <img class="w-[0.6rem] h-2 transition-transform" src="./images/icon-arrow-down.svg" alt="">
             </div>
             <p class="text-xs pt-2 pr-4 text-[var(--Dark-grayish-blue)]" style="display: none;" id="answer2">No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
         
           <div class="flex flex-col py-4 border-b-[1px] border-solid border-[var(--Light-grayish-blue)]">
-            <div class="flex flex-row items-center justify-between" id="question3" onclick="showAnswer(3, event)">
-              <span class="text-sm text-[var(--Very-dark-grayish-blue)]">How do I reset my password?</span>
+            <div class="flex flex-row items-center justify-between cursor-pointer" id="question3" onclick="showAnswer(3, event)">
+              <span class="text-sm text-[var(--Very-dark-grayish-blue)] lg:hover:text-[var(--Soft-red)]">How do I reset my password?</span>
               <img class="w-[0.6rem] h-2 transition-transform" src="./images/icon-arrow-down.svg" alt="">
             </div>
             <p class="text-xs pt-2 pr-4 text-[var(--Dark-grayish-blue)]" style="display: none;" id="answer3">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
           </div>
         
           <div class="flex flex-col py-4 border-b-[1px] border-solid border-[var(--Light-grayish-blue)]">
-            <div class="flex flex-row items-center justify-between" id="question4" onclick="showAnswer(4, event)">
-              <span class="text-sm text-[var(--Very-dark-grayish-blue)]">Can I cancel my subscription?</span>
+            <div class="flex flex-row items-center justify-between cursor-pointer" id="question4" onclick="showAnswer(4, event)">
+              <span class="text-sm text-[var(--Very-dark-grayish-blue)] lg:hover:text-[var(--Soft-red)]">Can I cancel my subscription?</span>
               <img class="w-[0.6rem] h-2 transition-transform" src="./images/icon-arrow-down.svg" alt="">
             </div>
             <p class="text-xs pt-2 pr-4 text-[var(--Dark-grayish-blue)]" style="display: none;" id="answer4">Yes! Send us a message and we’ll process your request no questions asked.</p questiononclick="showAnswer(), event">
           </div>
         
           <div class="flex flex-col py-4 border-b-[1px] border-solid border-[var(--Light-grayish-blue)]">
-            <div class="flex flex-row items-center justify-between" id="question5" onclick="showAnswer(5, event)">
-              <span class="text-sm text-[var(--Very-dark-grayish-blue)]">Do you provide additional support?</span>
+            <div class="flex flex-row items-center justify-between cursor-pointer" id="question5" onclick="showAnswer(5, event)">
+              <span class="text-sm text-[var(--Very-dark-grayish-blue)] lg:hover:text-[var(--Soft-red)]">Do you provide additional support?</span>
               <img class="w-[0.6rem] h-2 transition-transform" src="./images/icon-arrow-down.svg" alt="">
             </div>
             <p class="text-xs pt-2 pr-4 text-[var(--Dark-grayish-blue)]" style="display: none;" id="answer5">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
